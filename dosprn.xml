@@ -1,0 +1,116 @@
+<?xml version="1.0" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>2.01</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>PADGen 2.0.1.22 http://www.padgen.org</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>DOSPRN</Company_Name>
+		<Address_1>314 Shengelia str.</Address_1>
+		<Address_2 />
+		<City_Town>Kherson</City_Town>
+		<State_Province>n/a</State_Province>
+		<Zip_Postal_Code>73000</Zip_Postal_Code>
+		<Country>Ukraine</Country>
+		<Company_WebSite_URL>http://www.dosprn.com</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>Alex</Author_First_Name>
+			<Author_Last_Name>Goldberg</Author_Last_Name>
+			<Author_Email>support@dosprn.com</Author_Email>
+			<Contact_First_Name>Alex</Contact_First_Name>
+			<Contact_Last_Name>Goldberg</Contact_Last_Name>
+			<Contact_Email>support@dosprn.com</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>support@dosprn.com</Sales_Email>
+			<Support_Email>support@dosprn.com</Support_Email>
+			<General_Email>support@dosprn.com</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>DOSPRN</Program_Name>
+		<Program_Version>1.85</Program_Version>
+		<Program_Release_Month>11</Program_Release_Month>
+		<Program_Release_Day>26</Program_Release_Day>
+		<Program_Release_Year>2016</Program_Release_Year>
+		<Program_Cost_Dollars>14.95</Program_Cost_Dollars>
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Shareware</Program_Type>
+		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
+		<Program_OS_Support>Win95,Win98,WinME,WinNT 4.x,Windows2000,WinXP,Windows2003,Vista,Win7 x32,Win7 x64</Program_OS_Support>
+		<Program_Language>English,Czech,Danish,Finnish,French,German,Greek,Hungarian,Italian,Polish,Portuguese,Romanian,Russian,Spanish,Swedish,Turkish</Program_Language>
+		<Program_Change_Info />
+		<Program_Specific_Category>Utilities</Program_Specific_Category>
+		<Program_Category_Class>System Utilities::Printer</Program_Category_Class>
+		<Program_Categories>Printers</Program_Categories>
+		<Program_System_Requirements />
+		<Includes_JAVA_VM>N</Includes_JAVA_VM>
+		<Includes_VB_Runtime>N</Includes_VB_Runtime>
+		<Includes_DirectX>N</Includes_DirectX>
+		<File_Info>
+			<Filename_Versioned>DOSprn185.exe</Filename_Versioned>
+			<Filename_Previous>DOSprn184.exe</Filename_Previous>
+			<Filename_Generic>DOSprn.exe</Filename_Generic>
+			<Filename_Long />
+			<File_Size_Bytes>1678769</File_Size_Bytes>
+			<File_Size_K>1639</File_Size_K>
+			<File_Size_MB>1.60</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>Y</Has_Expire_Info>
+			<Expire_Count>100</Expire_Count>
+			<Expire_Based_On>Uses</Expire_Based_On>
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>DOSPRN, DOS print, prn2file, print, printing, DOS USB, dosprint, printfil, dos program, usb printer, print server, pdf printer, fax printer</Keywords>
+			<Char_Desc_45>Print to windows printer from a dos program</Char_Desc_45>
+			<Char_Desc_80>DOSPRN allows to use your old DOS program with new printers</Char_Desc_80>
+			<Char_Desc_250>DOSPRN allows to print reports from your favorite DOS program on the modern printers independently of their types. USB, PDF, network printers supported.</Char_Desc_250>
+			<Char_Desc_450>DOSPRN is a special program for support printing from DOS applications on any kinds of printers include winprinters, USB-printers, network printers, print servers etc.
+
+Also DOSPRN supports Epson and HP PCL Esc-sequences emulation, multiple international codepages, landscape/portrait printing, text color manipulation, absolute positioning and many other features.</Char_Desc_450>
+			<Char_Desc_2000>This program helps to extend life to old DOS programs. Nowadays, many laser and jet printers have powerful features but ... can not print a simple text accurately. Besides, some inexpensive printers can not print in text mode at all (the so-called win-printers or GDI-devices).
+
+DOSPRN allows you to use a good old DOS program with new printers irrespective of their types (Yes, USB and network printers, print-servers, and PDF-printers too!)
+
+Also DOSPRN supports Epson and HP PCL Esc-sequences emulation, multiple international codepages, landscape/portrait printing, text color manipulation, absolute positioning and many other features.</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>http://www.dosprn.com</Application_Info_URL>
+			<Application_Order_URL>http://www.dosprn.com/order.htm</Application_Order_URL>
+			<Application_Screenshot_URL>http://www.dosprn.com/images/mainw8.png</Application_Screenshot_URL>
+			<Application_Icon_URL />
+			<Application_XML_File_URL>http://www.dosprn.com/dosprn.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>http://www.dosprn.com/DOSprn185.exe</Primary_Download_URL>
+			<Secondary_Download_URL>http://ukrainian.dosprn.com/DOSprn185.exe</Secondary_Download_URL>
+			<Additional_Download_URL_1 />
+			<Additional_Download_URL_2 />
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions />
+		<EULA />
+	</Permissions>
+	<ASP>
+		<ASP_FORM>Y</ASP_FORM>
+		<ASP_Member>N</ASP_Member>
+		<ASP_Member_Number />
+	</ASP>
+</XML_DIZ_INFO>

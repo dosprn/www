@@ -1,0 +1,138 @@
+a{
+	color : #0000FF;
+	text-decoration : none
+}
+
+a:visited{
+	color : #0000FF
+}
+
+a:hover{
+	color : #0000FF;
+	text-decoration : underline
+}
+
+ul/*auditor infopage list*/{
+	color : #000000;
+	font : 12px Arial,Herlvetica,Verdana,sans-serif;
+}
+
+.h2/*submission h2*/{
+	color : #003399;
+	font : normal bold 12px Verdana,Arial,Helvetica,sans-serif;
+	margin-left : 10px
+}
+
+/*compatibility with older css*/
+.header/*submission heading */{
+	color : #003399;
+	font : normal bold 17px Verdana,Arial,Helvetica,sans-serif
+}
+
+/*REPORTS*/
+.headertext/*report creation date*/{
+	font : 10px Verdana,Arial,Helvetica,sans-serif
+}
+
+.hedertitle/* report main title*/{
+	color : #003399;
+	font : normal bold 17px Verdana,Arial,Helvetica,sans-serif
+}
+
+.hedertitle2/*report errors and messages*/{
+	color : #666666;
+	font : bold 15px Verdana,Arial,Helvetica,sans-serif;
+	padding-left : 10 px
+}
+
+.hedertitle3/*report errors and messages*/{
+	color : #666666;
+	font : bold 15px Verdana,Arial,Helvetica,sans-serif
+}
+
+.hedertitle4/*report errors and messages*/{
+	color : #000000;
+	font : bold 14px Verdana,Arial,Helvetica,sans-serif
+}
+
+.linkstyle/*auditor hint special markup*/{
+	color : #333333;
+	font : 12px Arial,Helvetica,sans-serif
+}
+
+.oblique/*table title with horizontal bottom line */{
+	border-bottom-color : #CCCCCC;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	font : bold 12px Arial,Helvetica,sans-serif;
+	padding : 3px 5px
+}
+
+.plaintxt1/*plain text*/{
+	color : #000000;
+	font : 12px Arial,Herlvetica,Verdana,sans-serif;
+	margin-left : 10px
+}
+
+.resultstable/*border of results table*/{
+	border : medium solid #003399
+}
+
+.tableheader/*top data heading*/{
+	background : #003399;
+	color : #FFFFFF;
+	font : normal bold 14px Verdana,Arial,Helvetica,sans-serif
+}
+
+.tableheaderblue/*small data headings*/{
+	color : #003399;
+	font : normal bold 12px Verdana,Arial,Helvetica,sans-serif
+}
+
+.tableheaderlarge/*massive top data heading*/{
+	background : #003399;
+	color : #FFFFFF;
+	font : normal 17px Verdana,Arial,Helvetica,sans-serif
+}
+
+.tableheadersmal/*small top data header*/{
+	background : #003399;
+	color : #FFFFFF;
+	font : normal normal 12px Verdana,Arial,Helvetica,sans-serif
+}
+
+.tablerror/*report error*/{
+	color : #333333;
+	font : 12px Arial,Helvetica,sans-serif
+}
+
+.tdbottomline/*data td with bottom horizontal line*/{
+	border-bottom-color : #CCCCCC;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	font : 12px Arial,Helvetica,sans-serif;
+	padding : 3px 5px
+}
+
+.tdbottomnoline/*data td*/{
+	font : 12px Arial,Helvetica,sans-serif;
+	padding : 3px 5px
+}
+
+.text/*reports plain text*/{
+	color : #000000;
+	font : 12px Arial,Helvetica,sans-serif
+}
+
+.activetext1{
+	color : #0000FF;
+	text-decoration : none
+}
+/*.H1{
+	background : #3163CE;
+	color : #FFFFFF;
+	font : bold 18px Arial,Herlvetica,Verdana,sans-serif;
+	font-size-adjust : none;
+	text-indent : 10 px;
+}
+*/
