@@ -78,6 +78,9 @@
           <h4><a href="#26">Whether DOSPRN is compatible with vDOS emulator of DOS?</a>
           </h4>
         </li><li>
+          <h4><a href="#27">Whether DOSPRN is compatible with vDosPlus emulator of DOS?</a>
+          </h4>
+        </li><li>
           <h4><a href="#18">I tested DOSPRN trying to print out files with the &quot;copy filename prn&quot; DOS command. I have come to a conclusion
           DOSPRN can't process simple DOS commands. </a><a href="#18">Any suggestions
           please ?</a></h4>
@@ -238,7 +241,8 @@
 	DOSPRN is fully compatible 64-bit versions of Windows Vista, 7, 8 and 10.
 
 	Please take into account Windows Vista/7/8/10 64-bit doesn't support DOS programs. You cannot run DOS applications 
-	under 64-bit operating system directly. Since we recommend to run DOS programs in the <a href="#25">DOSbox</a> or <a href="#26">vDOS</a> emulator.
+	under 64-bit operating system directly. 
+	Since we recommend to run DOS programs in the <a href="#25">DOSbox</a>, <a href="#26">vDOS</a> or <a href="#27">vDosPlus</a> emulator.
 
         </li><li>
           <p><a name="25"></a><b>Whether DOSPRN is compatible with DOSBox, an x86 emulator with DOS?</b><br><br>
@@ -279,6 +283,26 @@ Chose "All Programs-vDOS-Config" option from the Windows Desktop Start menu and 
 <p><code>
 ............<br>
 LPT1 = "%ProgramFiles(x86)%\DOSPRN\DOSprn.exe" #lpt1.asc<br>
+............<br>
+</code></p>
+Note: Omit (x86) if you use Windows 32-bit.
+<!--
+b) Open DOSPRN window and make sure 'Spool filename (filemask)' field contains default value (%userprofile%\prnspl1).
+-->
+          </p>
+
+        </li><li>
+          <p><a name="27"></a><b>Whether DOSPRN is compatible with vDosPlus emulator of DOS?</b><br><br>
+Yes, DOSPRN is fully compatible with vDosPlus emulator. For printing DOS reports automatically you
+should change vDosPlus configuration for copying LPTx traffic directly into DOSPRN. Please adjust next settings:
+
+<br><br>
+<!--a) -->
+Chose "All Programs-vDosPlus-Config" option from the Windows Desktop Start menu and add (or replace) "LPT1" (or another LPTx) option in the such way:
+
+<p><code>
+............<br>
+LPT1 = @%ProgramFiles(x86)%\DOSPRN\DOSprn.exe #lpt1.asc<br>
 ............<br>
 </code></p>
 Note: Omit (x86) if you use Windows 32-bit.
