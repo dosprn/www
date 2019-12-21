@@ -5,6 +5,25 @@
 <META name=Keywords content="DOS print order, DOS2usb purchase, DOS printers, program, print, printer, DOS USB, programs, LPT, DOS program, DOS software">
 <META name=Description content="DOSPRN works as a DOS printer and allow to use your DOS program with new printers independently of their types">
 <meta name=viewport content="width=device-width, initial-scale=1">
+
+<!-- Event snippet for Order conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-998639417/fsOrCI7s6JIBELmOmNwD',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </head>
 <BODY background=images/bg2.jpg>
 <DIV align=center>
@@ -70,7 +89,7 @@ After expiry of the trial period, you&nbsp;should register this program.</P>
 
           <td width="30%" align="center">
 <!--	  <A href="http://track.websiteceo.com/r/https/5192/shopper.mycommerce.com/checkout/product/50081-1">-->
-	  <A href="http://track.websiteceo.com/r/https/5192/order.shareit.com/cart/new?vendorid=200281833&PRODUCT[300914245]=1">
+	  <A onclick="return gtag_report_conversion('MyCommerce');" href="http://track.websiteceo.com/r/https/5192/order.shareit.com/cart/new?vendorid=200281833&PRODUCT[300914245]=1">
 
 	  <STRONG>Order DOSPRN via MyCommerce</STRONG></A>
 	  <font size=-2><br><br>Accepts Credit Cards, Paypal, Bank/Wire&nbsp;Transfers.
@@ -79,7 +98,7 @@ After expiry of the trial period, you&nbsp;should register this program.</P>
           <td width="5%" align="center">OR</td>
 
           <td width="30%" align="center">
-	  <A href="http://track.websiteceo.com/r/5192/sites.fastspring.com/dosprn/product/dosprn?option=mc">
+	  <A onclick="return gtag_report_conversion('FastSpring');" href="http://track.websiteceo.com/r/5192/sites.fastspring.com/dosprn/product/dosprn?option=mc">
 	  <STRONG>Order DOSPRN via FastSpring</STRONG></A>
 	  <font size=-2><br><br>Accepts Credit Cards, Paypal, Bank/Wire&nbsp;Transfer,<br>Check or Money Order, Purchase Order.
 <!--	  <br>Recommended for a single license--></font></td>
@@ -89,7 +108,7 @@ After expiry of the trial period, you&nbsp;should register this program.</P>
           <td width="5%" align="center">OR</td>
 
           <td width="30%" align="center">
-	  <A href="http://track.websiteceo.com/r/https/5192/secure.2checkout.com/order/checkout.php?PRODS=4713404&QTY=1&CART=1&CARD=2&SHORT_FORM=1">
+	  <A onclick="return gtag_report_conversion('2Checkout');" href="http://track.websiteceo.com/r/https/5192/secure.2checkout.com/order/checkout.php?PRODS=4713404&QTY=1&CART=1&CARD=2&SHORT_FORM=1">
 	  <STRONG>Order DOSPRN via 2Checkout</STRONG></A>
 	  <font size=-2><br><br>Multiple currencies.<br> Accepts Credit Cards, Paypal, iDEAL, Giropay, Nordea, Trustly.
 	  <br>Quick sale order form</font></td>
