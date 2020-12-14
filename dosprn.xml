@@ -98,7 +98,7 @@ Also DOSPRN supports Epson and HP PCL Esc-sequences emulation, multiple internat
 			<Application_XML_File_URL>http://www.dosprn.com/dosprn.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>http://www.dosprn.com/DOSprn185.exe</Primary_Download_URL>
+			<Primary_Download_URL>https://dosprn.com/DOSprn185.exe</Primary_Download_URL>
 			<Secondary_Download_URL>http://update.dosprn.com/DOSprn185.exe</Secondary_Download_URL>
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />
