@@ -187,6 +187,8 @@
           Before e-mailing <A href="mailto:support&#064dosprn.com">support</A>, be sure that you're using the latest available version
           of DOSPRN and your problem is not described in this FAQ or <a href="readme.htm">DOSPRN documentation</a>.
           </p>
+          <br>
+
         </li><li>
           <p><a name="19"></a><b>Do you have a temporary license to test the product ?<br>
           <br>
@@ -196,6 +198,7 @@
           try DOSPRN and be
           convinced that DOSPRN can solve your problem with DOS printing before <a href="order.htm">purchasing</a>.
           </p>
+          <br>
         </li><li>
           <p><a name="15"></a><b>The text printed on paper includes letters
           and signs that should not be there. Why ?</b><br>
@@ -209,6 +212,7 @@
           If you're sure you have selected the proper sequences palette, yet your documents include
           unusual characters, then e-mail <A href="mailto:support&#064dosprn.com">support</A>.
           </p>
+          <br>
         </li><li>
           <p><a name="16"></a><b>My document has been printed incorrectly. Can I give you
           this document to be tested ?</b><br>
@@ -222,6 +226,7 @@
             href="mailto:support&#064dosprn.com">support</A>. If you need to continue the 
 	  printing job later, you can select the &quot;AutoPrint&quot; option again.
           </p>
+          <br>
         </li><li>
           <p><a name="17"></a><b>I can print a text file with the DOSPRN &quot;Print
           file&quot; option but reports from my DOS program are not captured. Why ?<br>
@@ -233,26 +238,50 @@
           your report file names. Don't forget that temporary job file will be removed by DOSPRN
           after printing.
           </p>
+          <br>
         </li><li>
           <p><a name="23"></a><b>Does DOSPRN work with Vista, Windows7, Windows8 and Windows10 32 bit?</b><br><br>
 	We tested DOSPRN 1.85 and found it is compatible with Windows Vista, Windows 7, Windows 8 and Windows 10 32-bit.</p>
+          <br>
         </li><li>
           <p><a name="24"></a><b>Does DOSPRN work with Vista, Windows7, Windows8 and Windows10 64 bit?</b><br><br>
 	DOSPRN is fully compatible 64-bit versions of Windows Vista, 7, 8 and 10.
 
 	Please take into account Windows Vista/7/8/10 64-bit doesn't support DOS programs. You cannot run DOS applications 
 	under 64-bit operating system directly. 
-	Since we recommend to run DOS programs in the <a href="#25">DOSbox</a>, <a href="#26">vDOS</a> or <a href="#27">vDosPlus</a> emulator.
+	Since we recommend to run DOS programs in the <a href="#25">DOSbox</a>, <a href="#26">vDOS</a> or <a href="#27">vDosPlus</a> emulator.</p><br>
 
         </li><li>
           <p><a name="25"></a><b>Whether DOSPRN is compatible with DOSBox, an x86 emulator with DOS?</b><br><br>
 First we have to notice public version DOSBox 0.7x doesn't support printing from DOS at all.<br><br>
+Since we recommend to use <a href="#28">DOSBox-X</a> release which is much more flexible and provides more features.
+Also you can use <a href="#29">DOSBox Mega Build 6</a> and <a href="#30">DOSBox SVN Daum</a> builds.</p><br>
+        </li><li>
+          <p><a name="28"></a><b>Whether DOSPRN is compatible with DOSBox-X, an x86 emulator with DOS?</b><br><br>
 
-Since we recommend to use "DOSBox Mega Build 6" release with bugfixes is compatible with DOSPRN. You can download it here: 
-<a href="http://www.dosprn.com/special/DOSBox_Megabuild6-win32-installer.exe">DOSBox_Megabuild6-win32-installer.exe</a>
+<br>DOSPRN is fully compatible with <a href="https://dosbox-x.com">DOSBox-X</a>.<br>
+Please take into account for printing DOS reports automatically you
+should change DOSBox-X configuration for printing DOS reports with DOSPRN support. Please adjust next settings:
 
-<br><br>Also you can use <a href="http://www.emucr.com/search/label/DOSBox-x">DOSBox-X</a> and 
-<a href="http://ykhwong.x-y.net/">DOSBox SVN Daum</a> DOSBOX builds.
+<br><br>Chose "View or edit dosbox-x.conf" option from the main menu and modify "parallel" section in the such way:
+<p>
+<div style="overflow: auto; width:640px;">
+<code>
+............<br>
+[parallel]<br>
+<span style="white-space: nowrap;">
+parallel1=file file:output1.prn timeout:1000 squote openwith:'"%ProgramFiles(x86)%\DOSPRN\DOSprn.exe"'</span><br>
+parallel2=disabled<br>
+parallel3=disabled<br>
+............<br>
+</code></div></p>
+Note: Omit (x86) if you use Windows 32-bit.
+	</p>
+          <br>
+        </li><li>
+          <p><a name="29"></a><b>How to use DOSPRN for printing reports from DOSBox Mega Build 6 (DOSBox MB6)?</b><br><br>
+
+Here you can download <a href="htts://dosprn.com/special/DOSBox_Megabuild6-win32-installer.exe">DOSBox Mega Build 6</a> release with bugfixes.
 
 <br><br>Please take into account for printing DOS reports automatically you
 should change DOSBox configuration for saving LPT1 traffic directly
@@ -260,12 +289,14 @@ into DOSPRN buffer file "C:\TEMP\PRNSPL1". Please adjust next settings:
 
 <br><br>a) Chose "Edit Configuration" DOSBOX option from the main menu and modify
 "parallel" section in the such way:
-<p><code>
+<p>
+<div style="overflow: auto; width:640px;">
+<code>
 [parallel]<br>
 parallel1=file append:c:\temp\prnspl1<br>
 parallel2=disabled<br>
 parallel3=disabled<br>
-</code>
+</code></div>
 <br>b) Create C:\TEMP\ directory if it does not exist
 
 <br><br>c) Open DOSPRN window and uncheck the 'Capture port' option if checked
@@ -274,24 +305,53 @@ parallel3=disabled<br>
 We'd  specified  "C:\TEMP\"  directory  as a sample only. You can use
 another favorite temporary directory.
           </p>
+          <br>
+        </li><li>
+          <p><a name="30"></a><b>How to use DOSPRN for printing reports from DOSBox SVN Daum?</b><br><br>
+
+Here you can download <a href="http://ykhwong.x-y.net/">DOSBox SVN Daum</a> release with bugfixes.
+
+<br><br>Please take into account for printing DOS reports automatically you
+should change DOSBox configuration for saving LPT1 traffic directly
+into DOSPRN buffer file "C:\TEMP\PRNSPL1". Please adjust next settings:
+
+<br><br>a) Chose "Edit Configuration" DOSBOX option from the main menu and modify
+"parallel" section in the such way:
+<p>
+<div style="overflow: auto; width:640px;">
+<code>
+............<br>
+[parallel]<br>
+parallel1=file append:c:\temp\prnspl1<br>
+parallel2=disabled<br>
+parallel3=disabled<br>
+............<br>
+</code></div>
+<br>b) Create C:\TEMP\ directory if it does not exist
+
+<br><br>c) Open DOSPRN window and uncheck the 'Capture port' option if checked
+<br><br>d) Enter "C:\TEMP\PRNSPL1" value in the 'Spool filename (filemask)' entry field.
+<br><br>
+We'd  specified  "C:\TEMP\"  directory  as a sample only. You can use
+another favorite temporary directory.
+          </p>
+          <br>
         </li><li>
           <p><a name="26"></a><b>Whether DOSPRN is compatible with vDOS emulator of DOS?</b><br><br>
 Yes, DOSPRN is fully compatible with vDOS emulator. For printing DOS reports automatically you
 should change vDOS configuration for copying LPTx traffic directly into DOSPRN. Please adjust next settings:
 
 <br><br>
-<!--a) -->
 Chose "All Programs-vDOS-Config" option from the Windows Desktop Start menu and add (or replace) "LPT1" (or another LPTx) option in the such way:
 
-<p><code>
+<p>
+<div style="overflow: auto; width:640px;">
+<code>
 ............<br>
 LPT1 = "%ProgramFiles(x86)%\DOSPRN\DOSprn.exe" #lpt1.asc<br>
 ............<br>
-</code></p>
+</code></div></p>
 Note: Omit (x86) if you use Windows 32-bit.
-<!--
-b) Open DOSPRN window and make sure 'Spool filename (filemask)' field contains default value (%userprofile%\prnspl1).
--->
           </p>
 
         </li><li>
@@ -303,16 +363,19 @@ should change vDosPlus configuration for copying LPTx traffic directly into DOSP
 <!--a) -->
 Chose "All Programs-vDosPlus-Config" option from the Windows Desktop Start menu and add (or replace) "LPT1" (or another LPTx) option in the such way:
 
-<p><code>
+<p>
+<div style="overflow: auto; width:640px;">
+<code>
 ............<br>
 LPT1 = @%ProgramFiles(x86)%\DOSPRN\DOSprn.exe #lpt1.asc<br>
 ............<br>
-</code></p>
+</code></div></p>
 Note: Omit (x86) if you use Windows 32-bit.
 <!--
 b) Open DOSPRN window and make sure 'Spool filename (filemask)' field contains default value (%userprofile%\prnspl1).
 -->
           </p>
+          <br>
 
         </li><li>
           <p><a name="18"></a><b>I tested DOSPRN trying to print out files with
@@ -351,6 +414,7 @@ b) Open DOSPRN window and make sure 'Spool filename (filemask)' field contains d
           purpose. At the point that you determine the usability of DOSPRN, you should either purchase DOSPRN or 
 	  uninstall it.
           </p>
+          <br>
         </li><li>
           <p><a name="2"></a><b>What is the registration code and registration key?<br>
           <br>
@@ -367,6 +431,7 @@ b) Open DOSPRN window and make sure 'Spool filename (filemask)' field contains d
           you paste your unlock <b>KEY</b> in the corresponding field of the registration
           window, your DOSPRN license will be activated.
           </p>
+          <br>
         </li><li>
           <p><b><a name="3"></a>Each time I open the registration window I see a
           new code.
@@ -375,6 +440,7 @@ b) Open DOSPRN window and make sure 'Spool filename (filemask)' field contains d
           No, this is correct. This is a part of the DOSPRN key protection system.
           You can send any code that you find there.
           </p>
+          <br>
         </li><li>
           <p><b><a name="4"></a>If I send you my registration code, shall I leave the 
 	  registration window open and my computer switched on until I receive my unlock key?<br>
@@ -385,6 +451,7 @@ b) Open DOSPRN window and make sure 'Spool filename (filemask)' field contains d
 	  no mistakes when you type in the <b>CODE</b> or <b>KEY</b>. 
 	  Use 'copy and paste' to avoid typos.
           </p>
+          <br>
         </li><li>
           <p><b><a name="20"></a>After typing my license KEY into registration
           window, a &quot;Thank you....&quot; message has appeared on the screen. But
