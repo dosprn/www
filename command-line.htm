@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD><TITLE>DOSPRN 1.85 command line options</TITLE>
+<HTML><HEAD><TITLE>DOSPRN 1.86 command line options</TITLE>
 <META http-equiv=Content-Language content=en-us>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
 <META name=Keywords content="command line, command line options, dos printer, printfil, dos usb driver, dos print command, DOS, printers, program, print, printer, USB, programs, DOS LPT, DOS program" >
@@ -12,7 +12,7 @@
 <TABLE cellSpacing=0 cellPadding=6 width=50% style="max-width:640px" border=0>
   <TR>
     <TD width=100%>
-      <div style="float:left"><IMG src="images/logo.gif" ALT="DOS USB print under Windows 8, Windows 7, Windows XP, Windows2000, Windows98"> <font size="5"><b>&nbsp;DOSPRN&nbsp;1.85&nbsp;</b></font></div>
+      <div style="float:left"><IMG src="images/logo.gif" ALT="DOS USB print under Windows 8, Windows 7, Windows XP, Windows2000, Windows98"> <font size="5"><b>&nbsp;DOSPRN&nbsp;1.86&nbsp;</b></font></div>
   
       <table border="2" bgcolor="#C0C0C0" cellpadding="4" cellspacing="4">
         <tr>
@@ -47,6 +47,10 @@
 <p>The list of command line options supported by DOSPRN is here:</p>
           <hr width="90%" color="#008000">
 
+<p>Start DOSPRN with a separate profile:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /profile:ProfileName</code></p>
+          <hr width="90%" color="#008000">
+
 <p>Start DOSPRN for printing specified file silently:<br>
 <code>"C:\Program Files\DOSPRN\DOSprn.exe" C:\full_path\filename.ext</code></p>
           <hr width="90%" color="#008000">
@@ -59,12 +63,28 @@
 <code>"C:\Program Files\DOSPRN\DOSprn.exe" /printer:"Canon iP4200"</code></p>
           <hr width="90%" color="#008000">
 
-<p>Start DOSPRN for printing in specified orientation mode:<br>
-<code>"C:\Program Files\DOSPRN\DOSprn.exe" /orientation:"Landscape"</code></p>
+<p>Start DOSPRN with enabled/disabled 'Capture port' option:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /capture:off</code></p>
           <hr width="90%" color="#008000">
 
-<p>Start DOSPRN for printing on specified paper sheet:<br>
-<code>"C:\Program Files\DOSPRN\DOSprn.exe" /paper:"A4"</code></p>
+<p>Start DOSPRN for monitoring separate spool file (with /capture=off only):<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /spool:"C:\SpoolDir\SpoolFile.ext"</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN in the enabled/disabled 'Autoprint' mode:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /autoprint:off</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN for printing with a specific title:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /title:"Printing Title"</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN for printing on specified paper:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /paper:"Letter"</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN for printing in specified orientation mode:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /orientation:"Landscape"</code></p>
           <hr width="90%" color="#008000">
 
 <p>Start DOSPRN for printing with specified font name:<br>
@@ -93,6 +113,10 @@
 
 <p>Start DOSPRN for printing in the specified code page emulation mode:<br>
 <code>"C:\Program Files\DOSPRN\DOSprn.exe" /codepage:"737"</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN in the non-resident mode. It will be unloaded from the memory on 'Close' command:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /noresident</code></p>
           <hr width="90%" color="#008000">
 
 <p>Unload DOSPRN from the memory beforehand with command:<br>
