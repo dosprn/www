@@ -34,9 +34,9 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>DOSPRN</Program_Name>
-		<Program_Version>1.86</Program_Version>
-		<Program_Release_Month>04</Program_Release_Month>
-		<Program_Release_Day>13</Program_Release_Day>
+		<Program_Version>1.87</Program_Version>
+		<Program_Release_Month>09</Program_Release_Month>
+		<Program_Release_Day>15</Program_Release_Day>
 		<Program_Release_Year>2021</Program_Release_Year>
 		<Program_Cost_Dollars>14.95</Program_Cost_Dollars>
 		<Program_Cost_Other_Code />
@@ -55,13 +55,13 @@
 		<Includes_VB_Runtime>N</Includes_VB_Runtime>
 		<Includes_DirectX>N</Includes_DirectX>
 		<File_Info>
-			<Filename_Versioned>DOSprn186.exe</Filename_Versioned>
-			<Filename_Previous>DOSprn185.exe</Filename_Previous>
+			<Filename_Versioned>DOSprn187.exe</Filename_Versioned>
+			<Filename_Previous>DOSprn186.exe</Filename_Previous>
 			<Filename_Generic>DOSprn.exe</Filename_Generic>
 			<Filename_Long />
-			<File_Size_Bytes>1748899</File_Size_Bytes>
-			<File_Size_K>1708</File_Size_K>
-			<File_Size_MB>1.67</File_Size_MB>
+			<File_Size_Bytes>1877064</File_Size_Bytes>
+			<File_Size_K>1833</File_Size_K>
+			<File_Size_MB>1.79</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>Y</Has_Expire_Info>
@@ -98,8 +98,8 @@ Also DOSPRN supports Epson and HP PCL Esc-sequences emulation, multiple internat
 			<Application_XML_File_URL>https://dosprn.com/dosprn.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://dosprn.com/DOSprn186.exe</Primary_Download_URL>
-			<Secondary_Download_URL>http://update.dosprn.com/DOSprn186.exe</Secondary_Download_URL>
+			<Primary_Download_URL>https://dosprn.com/DOSprn187.exe</Primary_Download_URL>
+			<Secondary_Download_URL>http://update.dosprn.com/DOSprn187.exe</Secondary_Download_URL>
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />
 		</Download_URLs>
