@@ -79,9 +79,7 @@
 			<Char_Desc_45>Print to windows printer from a dos program</Char_Desc_45>
 			<Char_Desc_80>DOSPRN allows to use your old DOS program with new printers</Char_Desc_80>
 			<Char_Desc_250>DOSPRN allows to print reports from your favorite DOS program on the modern printers independently of their types. USB, PDF, network printers supported.</Char_Desc_250>
-			<Char_Desc_450>DOSPRN is a special program for support printing from DOS applications on any kinds of printers include winprinters, USB-printers, network printers, print servers etc.
-
-Also DOSPRN supports Epson and HP PCL Esc-sequences emulation, multiple international codepages, landscape/portrait printing, text color manipulation, absolute positioning and many other features.</Char_Desc_450>
+			<Char_Desc_450>DOSPRN is a special program for support printing from DOS applications on any kinds of printers include winprinters, USB-printers, network printers, print servers etc. Also DOSPRN supports Epson and HP PCL Esc-sequences emulation, multiple international codepages, landscape/portrait printing, text color manipulation, absolute positioning and many other features.</Char_Desc_450>
 			<Char_Desc_2000>This program helps to extend life to old DOS programs. Nowadays, many laser and jet printers have powerful features but ... can not print a simple text accurately. Besides, some inexpensive printers can not print in text mode at all (the so-called win-printers or GDI-devices).
 
 DOSPRN allows you to use a good old DOS program with new printers irrespective of their types (Yes, USB and network printers, print-servers, and PDF-printers too!)
