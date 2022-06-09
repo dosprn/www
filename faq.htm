@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD><TITLE>DOSPRN 1.88 - Frequently Asked Questions</TITLE>
+<HTML><HEAD><TITLE>DOSPRN 1.89 - Frequently Asked Questions</TITLE>
 <META http-equiv=Content-Language content=en-us>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
 <META name=Description content="Answers on frequently asked questions about DOSPRN features and dos printer">
@@ -20,7 +20,7 @@
 <TABLE cellSpacing=0 cellPadding=6 width=50% style="max-width:640px" border=0>
   <TR>
     <TD width=100%>
-      <div style="float:left"><IMG src="images/logo.gif" ALT="DOS USB print under Windows 8, Windows 7, Windows XP, Windows2000, Windows98"> <font size="5"><b>&nbsp;DOSPRN&nbsp;1.88&nbsp;</b></font></div>
+      <div style="float:left"><IMG src="images/logo.gif" ALT="DOS USB print under Windows 11, Windows 10, Windows 8, Windows 7, Windows XP, Windows2000, Windows98"> <font size="5"><b>&nbsp;DOSPRN&nbsp;1.89&nbsp;</b></font></div>
   
       <table border="2" bgcolor="#C0C0C0" cellpadding="4" cellspacing="4">
         <tr>
@@ -72,8 +72,18 @@
           file&quot; option but reports from my DOS program are not captured .
           Why ?</a>
           </h4>
-        </li><li>
-          <h4><a href="#23">Does DOSPRN work with Vista, Windows 7, Windows 8 and Windows 10 32 bit?</a>
+        </li>
+
+      </ul>
+          
+        </li>
+          
+        <li>
+          <h4>COMPATIBILITIES
+          </h4>
+      <ul type="circle">
+        <li>
+          <h4><a href="#23">Does DOSPRN work with XP, Vista, Windows 7, Windows 8 and Windows 10 32 bit?</a>
           </h4>
         </li><li>
           <h4><a href="#24">Does DOSPRN work with Vista, Windows 7, Windows 8 and Windows 10 64 bit?</a>
@@ -94,9 +104,9 @@
           <h4><a href="#27">Whether DOSPRN is compatible with vDosPlus emulator of DOS?</a>
           </h4>
         </li><li>
-          <h4><a href="#18">I tested DOSPRN trying to print out files with the &quot;copy filename prn&quot; DOS command. I have come to a conclusion
-          DOSPRN can't process simple DOS commands. </a><a href="#18">Any suggestions
-          please ?</a></h4>
+          <h4><a href="#33">Whether DOSPRN is compatible with NTVDMx64?</a>
+          </h4>
+        </li>
       </ul>
           
         </li>
@@ -252,21 +262,31 @@
           after printing.
           </p>
           <br>
-        <hr width="90%" color="#008000"></li><li>
-          <p><a name="23"></a><b>Does DOSPRN work with Vista, Windows7, Windows8 and Windows10 32 bit?</b><br><br>
-	We tested DOSPRN 1.88 and found it is compatible with Windows Vista, Windows 7, Windows 8 and Windows 10 32-bit.</p>
+
+      </ul>
+        <hr width="90%" color="#008000"></li>
+        <li>
+          <h4>COMPATIBILITIES
+          </h4>
+      <ul type="circle">
+
+        <li>
+          <p><a name="23"></a><b>Does DOSPRN work with XP, Vista, Windows7, Windows8, Windows10 and Windows11 32 bit?</b><br><br>
+	We tested DOSPRN and found it is compatible with 32-bit versions of Windows XP, Vista, 7, 8, 10 and 11.<br>
+	You should simply install DOSPRN, run your DOS program, and print reports.</p>
           <br>
         <hr width="90%" color="#008000"></li><li>
-          <p><a name="24"></a><b>Does DOSPRN work with Vista, Windows7, Windows8 and Windows10 64 bit?</b><br><br>
-	DOSPRN is fully compatible with 64-bit versions of Windows Vista, 7, 8 and 10.<br><br>
+          <p><a name="24"></a><b>Does DOSPRN work with Vista, Windows7, Windows10 and Windows11 64 bit?</b><br><br>
+	DOSPRN is fully compatible with 64-bit versions of Windows Vista, 7, 8, 10 and 11.<br><br>
 
-	Please take into account Windows Vista/7/8/10 64-bit doesn't support DOS programs. You cannot run DOS applications 
+	Please take into account Windows Vista/7/8/10/11 64-bit doesn't support DOS programs. You cannot run DOS applications 
 	under 64-bit operating system directly. <br>
-	Since we recommend to run DOS programs in the <a href="#25">DOSbox</a>, <a href="#26">vDOS</a> or <a href="#27">vDosPlus</a> emulator.</p><br>
+	Since we recommend to run DOS programs in the <a href="#25">DOSbox</a> or <a href="#26">vDOS</a> emulator.</p><br>
 
         <hr width="90%" color="#008000"></li><li>
           <p><a name="31"></a><b>Does DOSPRN work with Windows98?</b><br><br>
-	DOSPRN is compatible with Windows 98 SE (Windows 98 Second Edition).
+	DOSPRN is compatible with Windows 98 SE (Windows 98 Second Edition).<br>
+	You should simply install DOSPRN, run your DOS program, and print reports.
           <br><br>
         <hr width="90%" color="#008000"></li><li>
           <p><a name="32"></a><b>Does DOSPRN work with Windows95?</b><br><br>
@@ -282,145 +302,121 @@ First we have to notice public version DOSBox 0.7x doesn't support printing from
 Since we recommend to use <a href="#28">DOSBox-X</a> release which is much more flexible and provides more features.
 Also you can use <a href="#29">DOSBox Mega Build 6</a> and <a href="#30">DOSBox SVN Daum</a> builds.</p><br>
         <hr width="90%" color="#008000"></li><li>
+
           <p><a name="28"></a><b>Whether DOSPRN is compatible with DOSBox-X, an x86 emulator with DOS?</b><br><br>
 
-<br>DOSPRN is fully compatible with <a href="https://dosbox-x.com">DOSBox-X</a>.<br>
-Please take into account for printing DOS reports automatically you
-should change DOSBox-X configuration for printing DOS reports with DOSPRN support. Please adjust next settings:
+<br>DOSPRN is fully compatible with <a href="https://dosbox-x.com">DOSBox-X</a>.<br><br>
 
-<br><br>Chose "View or edit dosbox-x.conf" option from the main menu and modify "parallel" section in the such way:
+DOSPRN automatically sets the required DOSBOX-X configuration settings if you enabled 
+the <b>"Enable integration DOSBOX, vDos, vDosPlus"</b> option during installation.
+You just need to start DOSBOX-X, run the DOS program and print the reports.<br><br>
+
+Otherwise you need to set up the DOSBOX-X configuration manually. <br>
+Chose "All Programs-DOSBox X-View or edit dosbox-x.conf" option from the main menu and modify "parallel" section in the such way:
 <p>
 <div style="overflow: auto; width:640px;">
 <code>
 ............<br>
 [parallel]<br>
-<span style="white-space: nowrap;">
-parallel1=file file:output1.prn timeout:1000 squote openwith:'"%ProgramFiles(x86)%\DOSPRN\DOSprn.exe"'</span><br>
+parallel1=file dev:lpt1<br>
 parallel2=disabled<br>
 parallel3=disabled<br>
 ............<br>
 </code></div></p>
-Note: Omit (x86) if you use Windows 32-bit.
+
 	</p>
           <br>
         <hr width="90%" color="#008000"></li><li>
           <p><a name="29"></a><b>How to use DOSPRN for printing reports from DOSBox Mega Build 6 (DOSBox MB6)?</b><br><br>
 
-Here you can download <a href="htts://dosprn.com/special/DOSBox_Megabuild6-win32-installer.exe">DOSBox Mega Build 6</a> release with bugfixes.
+Here you can download <a href="https://dosprn.com/special/DOSBox_Megabuild6-win32-installer.exe">DOSBox Mega Build 6</a> release with bugfixes.<br><br>
 
-<br><br>Please take into account for printing DOS reports automatically you
-should change DOSBox configuration for saving LPT1 traffic directly
-into DOSPRN buffer file "C:\TEMP\PRNSPL1". Please adjust next settings:
+DOSPRN automatically sets the required DOSBOX MB6 configuration settings if you enabled 
+the <b>"Enable integration DOSBOX, vDos, vDosPlus"</b> option during installation.
+You just need to start DOSBOX MB6, run the DOS program and print the reports.<br><br>
 
-<br><br>a) Chose "Edit Configuration" DOSBOX option from the main menu and modify
-"parallel" section in the such way:
+Otherwise you need to set up the DOSBOX MB6 configuration manually. <br>
+Chose "All Programs-DOSBox MB6-Edit Configuration" option from the main menu and modify "parallel" section in the such way:
 <p>
 <div style="overflow: auto; width:640px;">
 <code>
+............<br>
 [parallel]<br>
-parallel1=file append:c:\temp\prnspl1<br>
+parallel1=file dev:lpt1<br>
 parallel2=disabled<br>
 parallel3=disabled<br>
-</code></div>
-<br>b) Create C:\TEMP\ directory if it does not exist
+............<br>
+</code></div></p>
 
-<br><br>c) Open DOSPRN window and uncheck the 'Capture port' option if checked
-<br><br>d) Enter "C:\TEMP\PRNSPL1" value in the 'Spool filename (filemask)' entry field.
-<br><br>
-We'd  specified  "C:\TEMP\"  directory  as a sample only. You can use
-another favorite temporary directory.
-          </p>
-          <br>
+          </p><br>
         <hr width="90%" color="#008000"></li><li>
           <p><a name="30"></a><b>How to use DOSPRN for printing reports from DOSBox SVN Daum?</b><br><br>
 
-Here you can download <a href="http://ykhwong.x-y.net/">DOSBox SVN Daum</a> release with bugfixes.
+Here you can download <a href="http://ykhwong.x-y.net/">DOSBox SVN Daum</a> release with bugfixes.<br><br>
 
-<br><br>Please take into account for printing DOS reports automatically you
-should change DOSBox configuration for saving LPT1 traffic directly
-into DOSPRN buffer file "C:\TEMP\PRNSPL1". Please adjust next settings:
+DOSPRN automatically sets the required DOSBox SVN Daum configuration settings if you enabled 
+the <b>"Enable integration DOSBOX, vDos, vDosPlus"</b> option during installation.
+You just need to start DOSBox SVN Daum, run the DOS program and print the reports.<br><br>
 
-<br><br>a) Chose "Edit Configuration" DOSBOX option from the main menu and modify
-"parallel" section in the such way:
+Otherwise you need to set up the DOSBox SVN Daum configuration manually. <br>
+Chose "All Programs-DOSBox SVN Daum-Run DOSBox configuration" option from the main menu and modify "parallel" section in the such way:
 <p>
 <div style="overflow: auto; width:640px;">
 <code>
 ............<br>
 [parallel]<br>
-parallel1=file append:c:\temp\prnspl1<br>
+parallel1=file dev:lpt1<br>
 parallel2=disabled<br>
 parallel3=disabled<br>
 ............<br>
-</code></div>
-<br>b) Create C:\TEMP\ directory if it does not exist
+</code></div></p>
 
-<br><br>c) Open DOSPRN window and uncheck the 'Capture port' option if checked
-<br><br>d) Enter "C:\TEMP\PRNSPL1" value in the 'Spool filename (filemask)' entry field.
-<br><br>
-We'd  specified  "C:\TEMP\"  directory  as a sample only. You can use
-another favorite temporary directory.
-          </p>
-          <br>
+          </p><br>
         <hr width="90%" color="#008000"></li><li>
           <p><a name="26"></a><b>Whether DOSPRN is compatible with vDOS emulator of DOS?</b><br><br>
-Yes, DOSPRN is fully compatible with vDOS emulator. For printing DOS reports automatically you
-should change vDOS configuration for copying LPTx traffic directly into DOSPRN. Please adjust next settings:
+Yes, DOSPRN is fully compatible with vDOS emulator.<br><br>
 
-<br><br>
+DOSPRN automatically sets the required vDOS configuration settings if you enabled 
+the <b>"Enable integration DOSBOX, vDos, vDosPlus"</b> option during installation.
+You just need to start vDOS, run the DOS program and print the reports.<br><br>
+
+Otherwise you need to set up the vDOS configuration manually.<br>
 Chose "All Programs-vDOS-Config" option from the Windows Desktop Start menu and add (or replace) "LPT1" (or another LPTx) option in the such way:
-
 <p>
 <div style="overflow: auto; width:640px;">
 <code>
 ............<br>
-LPT1 = "%ProgramFiles(x86)%\DOSPRN\DOSprn.exe" #lpt1.asc<br>
+LPT1="LPT1":<br>
 ............<br>
 </code></div></p>
-Note: Omit (x86) if you use Windows 32-bit.
-          </p>
+
+	  </p><br>
 
         <hr width="90%" color="#008000"></li><li>
           <p><a name="27"></a><b>Whether DOSPRN is compatible with vDosPlus emulator of DOS?</b><br><br>
-Yes, DOSPRN is fully compatible with vDosPlus emulator. For printing DOS reports automatically you
-should change vDosPlus configuration for copying LPTx traffic directly into DOSPRN. Please adjust next settings:
+Yes, DOSPRN is fully compatible with vDosPlus emulator.<br><br>
 
-<br><br>
-<!--a) -->
-Chose "All Programs-vDosPlus-Config" option from the Windows Desktop Start menu and add (or replace) "LPT1" (or another LPTx) option in the such way:
+DOSPRN automatically sets the required vDosPlus configuration settings if you enabled 
+the <b>"Enable integration DOSBOX, vDos, vDosPlus"</b> option during installation.
+You just need to start vDosPlus, run the DOS program and print the reports.<br><br>
 
+Otherwise you need to set up the vDOS configuration manually.<br>
+Chose "All Programs-vDosPlus-View or edit config" option from the Windows Desktop Start menu and add (or replace) "LPT1" (or another LPTx) option in the such way:
 <p>
 <div style="overflow: auto; width:640px;">
 <code>
 ............<br>
-LPT1 = @%ProgramFiles(x86)%\DOSPRN\DOSprn.exe #lpt1.asc<br>
+LPT1=@%ProgramFiles(x86)%\DOSPRN\DOSprn.exe #lpt1.asc<br>
 ............<br>
 </code></div></p>
 Note: Omit (x86) if you use Windows 32-bit.
-          </p>
-          <br>
-
+          </p><br>
         <hr width="90%" color="#008000"></li><li>
-          <p><a name="18"></a><b>I tested DOSPRN trying to print out files with
-          &quot;copy filename prn&quot; DOS command. I have come to the conclusion
-          that DOSPRN can't process simple DOS commands. Any suggestions please ?<br>
-          <br>
-          </b>I think you have Windows NT/2000/XP/Vista/7/8/10 operating system. These OS do
-          not have pure DOS. DOS-box is not DOS and NT/2000/XP/Vista/7/8/10 console commands
-          are not DOS commands.<br>
-          <br>
-          For example, NT/2000/XP/Vista/7/8/10 use a "copy" command from their 32-bit kernel. Another
-          standard command for file printing (the <b>PRINT</b> command) is not a usual
-          DOS program. This is native Win32 console program (you can
-          find it in the SYSTEM32 directory, open it with any hexadecimal viewer and to<br>
-          be convinced).&nbsp;<br>
-          <br>
-          DOSPRN (namely the dos driver <i><b>PRN2FILE</b></i>) can't capture Win32 kernel output since it
-          can't redirect COPY and PRINT commands.<br>
-          <br>
-          If you want to print pure TXT files I recommend printing them with the
-          command <p><code>copy filename &quot;%USERPROFILE%\prnspl1&quot;</code></p> In this case your file will get directly into
-          the DOSPRN spool buffer and will be processed immediately.
-          </p>
+          <p><a name="33"></a><b>Does DOSPRN work with NTVDMx64?</b><br><br>
+	DOSPRN is compatible with <a href="http://www.columbia.edu/~em36/ntvdmx64.html">NTVDMx64</a>.<br>
+	You should simply install DOSPRN, run your DOS program, and print reports.
+	</p><br>
+
       </ul>
         <hr width="90%" color="#008000"></li>
         <li>
@@ -522,9 +518,14 @@ Note: Omit (x86) if you use Windows 32-bit.
           <p><b><a name="7"></a>How can I print a DOS-file?<br>
           <br>
           </b>Open the DOSPRN properties window. Press &quot;Print file&quot;, select a
-          file which then be printed and press &quot;Open&quot; button. You can also print any file automatically.
-          To do this, copy your 
-	  file so that it replaces the DOSPRN job file. This is &quot;%USERPROFILE%\prnspl1&quot; by default.
+          file which then be printed and press &quot;Open&quot; button. <br><br>You can also print any file automatically.
+          To do this, you can follow next ways:
+	  <ul type="disc"><li>copy your_file_name.ext prn</li>
+	      <li>copy your_file_name.ext lpt1</li>
+	      <li>print your_file_name.ext</li>
+	      <li>copy your_file_name.ext %USERPROFILE%\prnspl1</li>
+	  </ul>
+	      <br><font size="-1">Here &quot;%USERPROFILE%\prnspl1&quot; is a name for DOSPRN job file by default.</font>
           </p>
         <hr width="90%" color="#008000"></li><li>
           <p><b><a name="22"></a>How can I use Print Screen keyboard button so we can print whatever is on the screen from our DOS programs?<br>
@@ -595,13 +596,23 @@ Note: Omit (x86) if you use Windows 32-bit.
           </b>Yes, DOSPRN can print on any printing devices whose drivers have<br>
           been installed on your computer.<br>
           <br>
-          But at the present DOSPRN can print on only one printing device simultaneously. You
+          But at the present each DOSPRN instance can print on only one printing device simultaneously. You
           can select the current printer in the DOSPRN properties window ("Printer" area,
           "Select" button).<br>
           <br>
-          We plan to develop support for simultaneously printing on difference printers. If you have 
-          ideas as to how this should work, please <a href="mailto:support&#064dosprn.com?Subject=DOSPRN%20multiple%20printers%20support">mail
-          to us</a> your ideas.
+	  You can use command line option "profile" to run several DOSPRN instances. For example next sample will run two DOSPRN instances with different settings.
+
+<p><div style="overflow: auto; width:640px;"><code>
+%ProgramFiles%\DOSprn.exe -profile:Printer1 -printer:"Epson LQ-690"
+%ProgramFiles%\DOSprn.exe -profile:Printer2 -printer:"Microsoft Print to PDF"
+</code></div></p>
+
+You can combine "profile" option with other options to overwrite last saved settings in the specified profile:
+<p><div style="overflow: auto; width:640px;"><code>
+"%ProgramFiles%\DOSprn.exe" /profile:Printer1 -printer:"Epson LQ-690" /margins:"10;20;10;0" /lpi:"6" /cpi:"12"
+</code></div></p>
+Take into account DOSPRN supports some other command line options. Look at <a href="https://dosprn.com/command-line.htm">Command line options</a> for more details.
+
           </p>
       </ul>
 
