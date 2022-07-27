@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD><TITLE>DOSPRN 1.90 inline qrcode</TITLE>
+<HTML><HEAD><TITLE>DOSPRN 1.90 for Windows NT/2000/XP users</TITLE>
 <META http-equiv=Content-Language content=en-us>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
-<META name=Keywords  content="inline qrcode, DOS report bitmap, dos print command, DOS, printers, program, print, printer, USB, programs, LPT, DOS program, software, national, language, qr-code" >
-<META name=Description content="DOSPRN allows to generate and insert QR-codes into DOS reports">
+<META name=Keywords content="dos printer driver, dos printer, dos usb driver, dos print command, DOS, printers, program, print, printer, USB, programs, LPT, DOS program, software, national, language, internanional" >
+<META name=Description content="DOSPRN allow to use your old favorite DOS program with new printers independently of their types (yes, and USB also !)" >
 <meta name=viewport content="width=device-width, initial-scale=1">
 
 <script type="text/javascript">
@@ -20,7 +20,7 @@
 <TABLE cellSpacing=0 cellPadding=6 width=50% style="max-width:640px" border=0>
   <TR>
     <TD width=100%>
-      <div style="float:left"><IMG src="images/logo.gif" ALT="DOS USB print under Windows 11, Windows 10, Windows 8, Windows 7, Windows XP, Windows2000, Windows98"> <font size="5"><b>&nbsp;DOSPRN&nbsp;1.90&nbsp;</b></font></div>
+      <div style="float:left"><IMG src="images/logo.gif" ALT="DOS USB print under Windows 8, Windows 7, Windows XP, Windows2000, Windows98"> <font size="5"><b>&nbsp;DOSPRN&nbsp;1.90&nbsp;</b></font></div>
   
       <table border="2" bgcolor="#C0C0C0" cellpadding="4" cellspacing="4">
         <tr>
@@ -48,35 +48,37 @@
     </TD></TR>
   <TR>
     <TD width="100%">
-      <H1>Inline QR-code Files</H1>
-	<p>Current DOSPRN version could create QR-codes from the data files and print them as a part of reports.</p>
+      <H1>For Windows NT/2000/XP users</H1>
+      <P>DOSPRN can now use the dos-utility <I>prn2file.com </I>to automatically 
+      capture data, by which the DOS application will send this data to the printer running under Windows 
+      NT/2000/XP.<I> </I>This driver redirects all data printed in the current 
+      DOS-box to a dos file.</P>
+      <P>During installation, DOSPRN automatically places a call to <I>prn2file.com </I>into file <I>%SystemRoot%\System32\autoexec.nt</I><I>.</I>
+      This batch file is run each time you start the DOS-application.&nbsp;</P>
+      <P>You can also place a call to <I>prn2file.com </I>immediately before running 
+      your DOS-application. To do this, create a batch-file and place a call to <I>prn2file.com </I>and your DOS-application into it. Of course, in this 
+      case you need to remove the call from 
+      <I>%SystemRoot%\System32\autoexec.nt</I><I>.</I>&nbsp;</P>
+      <P>Parameters for redirector:</P><font size="-1"><PRE>PRN2FILE [/C] [filename] [#&lt;Num. LPT&gt;] [/S&lt;sizebuf&gt;] [/X&lt;XMSsizebuf&gt;]
+  where
+filename - name of file or directory to save captured data (default: c:\prnspl1)
+#n - number of LPT (default: #1)
+/C - check configuration file in the same directory as filename
+/S - conventional memory buffer size in bytes (default: /S4096)
+/X - XMS buffer size in Kbytes (default: /X200)</PRE></font>
+      <p>If PRN2FILE cannot allocate enough XMS memory buffer, it will use
+      conventional memory only. In this case default size of conventional memory
+      buffer will be automatically enlarged up to 16Kb.</p>
+      <P>If your DOS-application generates large reports, you may increase the buffer 
+      size parameter.</P>
+      <p>If /C option is specified DOSPRN will check PRN2FILE.CFG in the same directory where captured data file 
+      should be placed. In such case DOSPRN will capture LPT traffic if configuration file is present only.</p>
+      <H4>Note:</H4>
+      <P>In DOSPRN, you can also change the parameter "Job filename" to another valid
+      DOS filename with full path and specify in your DOS-application this path/filename.
+      You have to disable 'Capture port' option for this purpose</P>
 
-	<h4>Escape commands could have a format</h4>
-
-<code>
-ESC~9;ZZ;"filename.txt" - print QR-code, where ZZ - is a zoom factor<br>
-</code>
-
-	<h4>This is a part of a demo program in the BASIC syntax includes sample QR-code file into the document:</h4>
-<textarea cols="80" rows="13">
-LPRINT "TEST QRCODE PRINTING"
-LPRINT ""
-LPRINT "TEXT OVER QRCODE"
-LPRINT "TEXT LEFT" + CHR$(27)+"~9;20;"+CHR$(34)+"C:\TEMP\qrcode.txt"+CHR$(34)
-LPRINT "TEXT LEFT                       TEXT RIGHT"
-LPRINT "TEXT LEFT                       TEXT RIGHT"
-LPRINT "TEXT LEFT                       TEXT RIGHT"
-LPRINT "TEXT LEFT                       TEXT RIGHT"
-LPRINT "TEXT LEFT                       TEXT RIGHT"
-LPRINT "TEXT LEFT                       TEXT RIGHT"
-LPRINT "TEXT LEFT                       TEXT RIGHT"
-LPRINT "TEXT UNDER QRCODE"</textarea>
-	<h4>Result of printing this document with DOSPRN support is here:</h4>
-
-<IMG src="images/dosprn_qr_code.png" ALT="Sample of a report with inline qrcode">
-
-
-</TD></TR>
+      <P>&nbsp;</P></TD></TR>
   <TR>
     <TD align=middle width="100%" style="line-height:1.5">
       <HR><font size="+1">
@@ -89,44 +91,20 @@ LPRINT "TEXT UNDER QRCODE"</textarea>
       <A href="login.htm">Login</A>
       </FONT>
       <HR>
-    </TD></TR>
-
-<tr><td>
-</td></tr>
-</TABLE></CENTER></DIV>
-
-<BR>
-<center><table>  <tr><td>
-<script type="text/javascript"><!--
-google_ad_client = "pub-7345064744247144";
-google_ad_width = 728;
-google_ad_height = 90;
-google_ad_format = "728x90_as";
-google_ad_channel ="";
-google_ad_type = "text";
-google_color_border = "000000";
-google_color_bg = "F0F0F0";
-google_color_link = "0000FF";
-google_color_url = "008000";
-google_color_text = "000000";
-//--></script>
-<script type="text/javascript"
-  src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>  </td></tr>
-</table></center>
+    </TD></TR></TABLE></CENTER></DIV>
 
 
 <!--WEBSITECEO:BEGIN:{764EEF2E-BC11-45CF-8627-300CE1BA2219}-->
 <!--
 Do NOT modify this script to avoid traffic misrepresentation! 
 Web CEO 4 0300/1
-Code initially inserted into: "/login.htm".
+Code initially inserted into: "/prn2file.htm".
 -->
 <script type="text/javascript"><!--
 // hitlens v1.2.7
 function hitlens_embedded() {
 var id = 5192;
-var pc = 99;
+var pc = 104;
 var PAGENAME = escape('');
 var CONTENTGROUP = escape('');
 var TRANSACTION = escape('');
