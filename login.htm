@@ -13,8 +13,43 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "ajnahusunj");
 </script>
+
+    <script type="text/javascript" 
+        src="rc4.js">
+    </script>
+    <script type="text/javascript" 
+        src="serialize.js">
+    </script>
+
+<script type="text/javascript">
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    return '';
+}
+function adjust() {
+  document.getElementById("order").setAttribute("value", getQueryVariable('order'));
+  document.getElementById("email").setAttribute("value", getQueryVariable('email'));
+}
+</script>
+
+<style>
+input {
+  height: 100%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+
 </head>
-<BODY background=images/bg2.jpg>
+<BODY background="images/bg2.jpg" onload="adjust()">
 <DIV align=center>
 <CENTER>
 <TABLE cellSpacing=0 cellPadding=6 width=50% style="max-width:640px" border=0>
@@ -32,7 +67,6 @@
           <td><a href="https://bkltd.com/dosprn/"><img src="images/bg.png" width="30" height="20" alt="DOSPRN Bulgaria dos print support center" align="center" border="0"></a></td>
           <td><a href="https://indonesian.dosprn.com"><img src="images/id.png" width="30" height="20" alt="Indonesian DOSPRN support center" align="center" border="0"></a></td>
           <td><a href="https://dosprn.in"><img src="images/in.png" width="30" height="20" alt="Indian DOSPRN support" align="center" border="0"></a></td>
-
         </tr>
       </table>
 			
@@ -50,12 +84,133 @@
   <TR>
     <TD width="100%">
       <H1>Login</H1>
-      <p>We plan to introduce online KEY generation service for registered users
-      in the nearest future.&nbsp;</p>
-      <p>Thus our users will be able to generate licenses keys for their
-      computers in any time convenient for them.</p>
-      <P><b>Coming soon ...</b></P>
-      Now you can <A href="mailto:support@dosprn.com?Subject=DOSPRN%20LICENSE%20KEY">contact me</A> via email.<P></TD></TR>
+      <h3>This is an online key generation service for registered users.&nbsp;</h3>
+	To obtain a license key, you need to indicate:
+      <ul><li> the number of the DOSPRN order and</li>
+	 <li>the email address specified when purchasing the license.</li></ul>
+         You also need to specify a unique registration code:
+         <ul><li>open the main  DOSPRN window</li>
+	<li>click on the 'Registration' button and copy data from the 'Code' field</li></ul>
+      <P>
+
+<script>
+function chMode() {
+  var c = document.getElementById('replace').checked;
+  document.getElementById('replacediv').style.display = c ? 'inline' : 'none';
+}
+
+function NewKeyVisibility(v) {
+  var c0 = document.getElementById('newkeydiv');
+  c0.style.display = v;
+
+  var c2 = document.getElementById('newkeylbl2');
+  if (c0.style.backgroundColor !== 'red') {
+    c2.style.display = v;
+  } else {
+    c2.style.display = 'none';
+  }
+
+  if (v === 'inline') {
+    c0.scrollIntoView();
+  }
+}
+
+function GetLicense() {
+  NewKeyVisibility('none');
+
+  const salt = "dosprnkeygendosprnkeygen";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4) {
+      const response = rc4(salt, atob(this.responseText) );
+
+      if (this.status == 200) {
+        const resobj = JSON.parse(response);
+	rtext = resobj.text;
+	rnote = resobj.note;
+	rerrr = resobj.error;
+      } else {
+	rtext = 'An unexpected error has occurred. Try again later or contact support, please.';
+	rnote = 'error';
+	rerrr = 1;
+      }
+
+      var style = document.getElementById("newkey").style;
+      if (rerrr == 1) {
+        style.backgroundColor = 'red';
+	style.color = 'white';
+	style.fontWeight = 'bold';
+      } else {
+	style.backgroundColor = 'initial';
+	style.color = 'initial';
+	style.fontWeight = 'initial';
+      }
+
+      document.getElementById("newkey").value = rtext;
+      document.getElementById("code").value = '';
+      document.getElementById("key").value = '';
+      if (rnote) {
+	document.getElementById("newkeylbl").innerText = rnote;
+      } else {
+	document.getElementById("newkeylbl").innerText = '';
+      }
+      NewKeyVisibility('inline');
+      ReqEnabled();
+    }
+  };
+  xhttp.open("POST", "https://dosprn.in/check/keygen.php", true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+  var o = formDataToObject(document.getElementById('form'));
+  var queryString = btoa(rc4(salt, JSON.stringify(o) ) );
+
+  xhttp.send(queryString);
+}
+
+function CopyKey(id) {
+  navigator.clipboard.writeText(document.getElementById(id).value);
+}
+
+function ReqEnabled() {
+  var c = document.getElementById("getlicense");
+  c.disabled = !(document.getElementById("order").value && document.getElementById("email").value && document.getElementById("code").value);
+}
+</script>
+
+    <form id="form" onsubmit="return false;">
+        <b>
+	<label for="order">* Order number (required)</label><br>
+        <input placeholder="Your order number" type="text" id="order" name="order" size="80" oninput="ReqEnabled()"><br><br>
+
+	<label for="email">* Email (required)</label><br>
+        <input placeholder="Registered email address" type="email" id="email" name="email" size="80" oninput="ReqEnabled()"><br><br>
+
+	<label for="code">* Registration code (required)</label><br>
+        <input placeholder="Registration code from your computer" type="text" id="code" name="code" size="80" oninput="ReqEnabled()"><br><br>
+
+        <input type="radio" id="new" name="mode" value="NEW" checked onchange="chMode()"><label for="new">Get a new key</label><br>
+        <input type="radio" id="replace" name="mode" value="REPLACE" onchange="chMode()"><label for="replace">Replace the existing key</label><br>
+	</b>
+	<div style="display:none" id="replacediv">
+	<p>You need to specify the previous license key if you want to get a replacement instead of a previously issued one.</p>
+        <b>
+	<label for="key" id="keyid">* Old license key (required)</label><br>
+        <input placeholder="Old registration key" type="text" id="key" name="key" size="80"><br><br></div>
+        </b>
+    </form>
+
+        <b>
+	<button type="button" style="height:50px;width:200px" id="getlicense" onclick="GetLicense()" disabled>Get a license key</button><br><br>
+
+	<div style="display:none" id="newkeydiv">
+	<label for="newkey" id="newkeylbl"></label>
+	<button onclick="CopyKey('newkey')" id="newkeyclp">Copy to clipboard</button><br>
+        <input placeholder="New registration key" type="text" id="newkey" name="newkey" size="80" readonly="readonly"><br><br>
+	<label for="newkey" id="newkeylbl2">Place this key in the appropriate field in the "Registration" window and press the "Ok" button. Please take into account you have to enter the key as shown above, with hyphens.</label><br>
+	</div>
+
+	</b></P>
+      If you're having trouble you can <A href="mailto:support@dosprn.com?Subject=DOSPRN%20LICENSE%20KEY">contact me</A> via email.<P></TD></TR>
   <TR>
     <TD align=middle width="100%" style="line-height:1.5">
       <HR><font size="+1">
@@ -73,6 +228,26 @@
 <tr><td>
 </td></tr>
 </TABLE></CENTER></DIV>
+
+<BR>
+<center><table>  <tr><td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7345064744247144";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_channel ="";
+google_ad_type = "text";
+google_color_border = "000000";
+google_color_bg = "F0F0F0";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>  </td></tr>
+</table></center>
 
 
 <!--WEBSITECEO:BEGIN:{764EEF2E-BC11-45CF-8627-300CE1BA2219}-->
