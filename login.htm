@@ -6,6 +6,23 @@
 <META name=Description  content="DOSPRN customers could contact dos print support team via email. Usually we answer messages during 24 hours." >
 <meta name=viewport content="width=device-width, initial-scale=1">
 
+<style>
+.loader {
+  margin: auto;
+  border: 5px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 5px solid #FF7A59;
+  width: 20px;
+  height: 20px;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -116,6 +133,9 @@ function NewKeyVisibility(v) {
 }
 
 function GetLicense() {
+  var loader = document.getElementById('loader');
+  loader.style.display = 'block';
+
   NewKeyVisibility('none');
 
   const salt = "dosprnkeygendosprnkeygen";
@@ -156,6 +176,7 @@ function GetLicense() {
       }
       NewKeyVisibility('inline');
       ReqEnabled();
+      loader.style.display = 'none';
     }
   };
   xhttp.open("POST", "https://dosprn.in/check/keygen.php", true);
@@ -200,7 +221,12 @@ function ReqEnabled() {
     </form>
 
         <b>
-	<button type="button" style="height:50px;width:200px" id="getlicense" onclick="GetLicense()" disabled>Get a license key</button><br><br>
+	<table><tr>
+	<td><button type="button" style="height:50px;width:200px" id="getlicense" onclick="GetLicense()" disabled>Get a license key</button></td>
+	<td style="padding-left:10px"><div class="loader" id="loader" style="display:none"></div></td>
+        </tr></table>
+
+<br><br>
 
 	<div style="display:none" id="newkeydiv">
 	<label for="newkey" id="newkeylbl"></label>
