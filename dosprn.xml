@@ -13,7 +13,7 @@
 		<State_Province>n/a</State_Province>
 		<Zip_Postal_Code>73000</Zip_Postal_Code>
 		<Country>Ukraine</Country>
-		<Company_WebSite_URL>https://dosprn.com</Company_WebSite_URL>
+		<Company_WebSite_URL>https://www.dosprn.com</Company_WebSite_URL>
 		<Contact_Info>
 			<Author_First_Name>Alex</Author_First_Name>
 			<Author_Last_Name>Goldberg</Author_Last_Name>
@@ -89,14 +89,14 @@ Also DOSPRN supports Epson and HP PCL Esc-sequences emulation, multiple internat
 	</Program_Descriptions>
 	<Web_Info>
 		<Application_URLs>
-			<Application_Info_URL>https://dosprn.com</Application_Info_URL>
-			<Application_Order_URL>https://dosprn.com/order.htm</Application_Order_URL>
-			<Application_Screenshot_URL>https://dosprn.com/images/mainw8.png</Application_Screenshot_URL>
+			<Application_Info_URL>https://www.dosprn.com</Application_Info_URL>
+			<Application_Order_URL>https://www.dosprn.com/order.htm</Application_Order_URL>
+			<Application_Screenshot_URL>https://www.dosprn.com/images/mainw8.png</Application_Screenshot_URL>
 			<Application_Icon_URL />
-			<Application_XML_File_URL>https://dosprn.com/dosprn.xml</Application_XML_File_URL>
+			<Application_XML_File_URL>https://www.dosprn.com/dosprn.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://dosprn.com/DOSprn191.exe</Primary_Download_URL>
+			<Primary_Download_URL>https://www.dosprn.com/DOSprn191.exe</Primary_Download_URL>
 			<Secondary_Download_URL>http://update.dosprn.com/DOSprn191.exe</Secondary_Download_URL>
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />
