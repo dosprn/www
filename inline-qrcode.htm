@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD><TITLE>DOSPRN 1.91 inline qrcode allows to create QR-codes</TITLE>
+<HTML><HEAD><TITLE>DOSPRN 2.0 inline qrcode allows to create QR-codes</TITLE>
 <META http-equiv=Content-Language content=en-us>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
 <META name=Keywords  content="inline qrcode, DOS report bitmap, dos print command, DOS, printers, program, print, printer, USB, programs, LPT, DOS program, software, national, language, qr-code" >
@@ -20,7 +20,7 @@
 <TABLE cellSpacing=0 cellPadding=6 width=50% style="max-width:640px" border=0>
   <TR>
     <TD width=100%>
-      <div style="float:left"><IMG src="images/logo.gif" ALT="DOS USB print under Windows 11, Windows 10, Windows 8, Windows 7, Windows XP, Windows2000, Windows98"> <font size="5"><b>&nbsp;DOSPRN&nbsp;1.91&nbsp;</b></font></div>
+      <div style="float:left"><IMG src="images/logo.gif" ALT="DOS USB print under Windows 11, Windows 10, Windows 8, Windows 7, Windows XP, Windows2000, Windows98"> <font size="5"><b>&nbsp;DOSPRN&nbsp;2.0&nbsp;</b></font></div>
   
       <table border="2" bgcolor="#C0C0C0" cellpadding="4" cellspacing="4">
         <tr>
@@ -55,7 +55,10 @@
 	<h4>Escape commands could have a format</h4>
 
 <code>
-ESC~9;ZZ;"filename.txt" - print QR-code, where ZZ - is a zoom factor<br>
+ESC~7;ZZ;"qrcode raw text" - print a QR code from the raw text<br><br>
+ESC~8;ZZ;"filename.txt" - print the QR code from the file in UTF-8<br><br>
+ESC~9;ZZ;"filename.txt" - print a QR code from the file with the same code page as the main report<br><br>
+where ZZ - is a zoom factor<br>
 </code>
 
 	<h4>This is a part of a demo program in the BASIC syntax includes sample QR-code file into the document:</h4>
