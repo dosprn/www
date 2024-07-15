@@ -63,11 +63,11 @@
           <hr width="90%" color="#008000">
 
 <p>Start DOSPRN for printing specified file silently:<br>
-<code>"C:\Program Files\DOSPRN\DOSprn.exe" C:\full_path\filename.ext</code></p>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" D:\full_path\filename.ext</code></p>
           <hr width="90%" color="#008000">
 
 <p>Start DOSPRN for printing specified file with a small printers, fonts and margins selection dialog:<br>
-<code>"C:\Program Files\DOSPRN\DOSprn.exe" -dialog C:\full_path\filename.ext</code></p>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" -dialog D:\full_path\filename.ext</code></p>
           <hr width="90%" color="#008000">
 
 <p>Start DOSPRN for printing on specified printer:<br>
@@ -79,7 +79,7 @@
           <hr width="90%" color="#008000">
 
 <p>Start DOSPRN for monitoring separate spool file (with /capture=off only):<br>
-<code>"C:\Program Files\DOSPRN\DOSprn.exe" /spool:"C:\SpoolDir\SpoolFile.ext"</code></p>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /spool:"D:\SpoolDir\SpoolFile.ext"</code></p>
           <hr width="90%" color="#008000">
 
 <p>Start DOSPRN in the enabled/disabled 'Autoprint' mode:<br>
@@ -129,6 +129,37 @@
 <p>Start DOSPRN for printing in the specified code page emulation mode:<br>
 <code>"C:\Program Files\DOSPRN\DOSprn.exe" /codepage:"737"</code></p>
           <hr width="90%" color="#008000">
+
+
+<p>Start DOSPRN with a 'print preview' mode on or off:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /preview:on</code><br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /preview:off</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN with a 'saving into PDF' mode on, off or into the specified file:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /pdf:on</code><br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /pdf:off</code><br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /pdf:D:\full_path\filename.pdf</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN with a 'saving into PDF without dialog' mode on/off:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /autosavepdf:on</code><br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /autosavepdf:off</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN with an 'open PDF after saving' mode on/off:<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /openpdf:on</code><br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /openpdf:off</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN with a specified 'folder to save PDF':<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /pdffolder:"D:\full_path_to_save_pdf\"</code></p>
+          <hr width="90%" color="#008000">
+
+<p>Start DOSPRN with a specified 'filename pattern to save PDF':<br>
+<code>"C:\Program Files\DOSPRN\DOSprn.exe" /pdftemplate:"(dosprn)_yyyy_mm_dd_hh_nn_ss(.pdf)"</code></p>
+          <hr width="90%" color="#008000">
+
 
 <p>Start DOSPRN in the non-resident mode. It will be unloaded from the memory on 'Close' command:<br>
 <code>"C:\Program Files\DOSPRN\DOSprn.exe" /noresident</code></p>
