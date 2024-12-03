@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML><HEAD><link rel="canonical" href="https://www.dosprn.com/how-to-handle-two-printers.htm" /><TITLE>DOSPRN 2.0 - how to handle two printers from DOS program</TITLE>
 <META http-equiv=Content-Language content=en-us>
-<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
 <META name=Description content="Each DOSPRN instance can print on only one printing device. Use 'profile' command line option to run several DOSPRN instances">
 <META name=Keywords content="DOSPRN two printers, DOS two printers, DOSPRN profiles, DOSPRN several printers">
 <meta name=viewport content="width=device-width, initial-scale=1">
@@ -69,15 +69,15 @@ Yes, DOSPRN can print on any printing devices whose drivers have<br>
           <br>
 	  You can use command line option "profile" to run several DOSPRN instances. For example next sample will run two DOSPRN instances with different settings.
 
-<p><div style="overflow: auto; width:540px;"><code>
-%ProgramFiles%\DOSprn.exe -profile:Printer1 -printer:"Epson LQ-690"
-%ProgramFiles%\DOSprn.exe -profile:Printer2 -printer:"Microsoft Print to PDF"
-</code></div></p>
+<p><font size="-1"><div style="overflow: auto; width:540px;"><code>
+"%ProgramFiles%\DOSPRN\DOSprn.exe" -profile:Printer1 -lpt:1 -printer:"Epson LQ-690"
+"%ProgramFiles%\DOSPRN\DOSprn.exe" -profile:Printer2 -lpt:2 -printer:"Microsoft Print to PDF"
+	</code></div></font></p>
 
 You can combine "profile" option with other options to overwrite last saved settings in the specified profile:
-<p><div style="overflow: auto; width:540px;"><code>
-"%ProgramFiles%\DOSprn.exe" /profile:Printer1 -printer:"Epson LQ-690" /margins:"10;20;10;0" /lpi:"6" /cpi:"12"
-</code></div></p>
+<p><font size="-1"><div style="overflow: auto; width:540px;"><code>
+"%ProgramFiles%\DOSPRN\DOSprn.exe" /profile:Printer1 -printer:"Epson LQ-690" /margins:"10;20;10;0" /lpi:"6" /cpi:"12"
+	</code></div></font></p>
 Take into account DOSPRN supports some other command line options. Look at <a href="https://www.dosprn.com/command-line.htm">Command line options</a> for more details.
 
           </p>
