@@ -34,17 +34,17 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>DOSPRN</Program_Name>
-		<Program_Version>2.0</Program_Version>
-		<Program_Release_Month>04</Program_Release_Month>
-		<Program_Release_Day>15</Program_Release_Day>
-		<Program_Release_Year>2024</Program_Release_Year>
+		<Program_Version>2.1</Program_Version>
+		<Program_Release_Month>07</Program_Release_Month>
+		<Program_Release_Day>06</Program_Release_Day>
+		<Program_Release_Year>2025</Program_Release_Year>
 		<Program_Cost_Dollars>14.95</Program_Cost_Dollars>
 		<Program_Cost_Other_Code />
 		<Program_Cost_Other />
 		<Program_Type>Shareware</Program_Type>
 		<Program_Release_Status>New Release</Program_Release_Status>
 		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
-		<Program_OS_Support>Win95,Win98,WinME,WinNT 4.x,Windows2000,WinXP,Windows2003,Vista,Win7 x32,Win7 x64,Win8 x32,Win8 x64,Win10 x32,Win10 x64,Win11 x32,Win11 x64</Program_OS_Support>
+		<Program_OS_Support>Win95,Win98,WinME,WinNT 4.x,Windows2000,WinXP,Windows2003,Vista,Win7 x32,Win7 x64,Win8 x32,Win8 x64,Win10 x32,Win10 x64,Win11 x64</Program_OS_Support>
 		<Program_Language>English,Czech,Danish,Finnish,French,German,Greek,Hungarian,Italian,Polish,Portuguese,Romanian,Russian,Spanish,Swedish,Turkish</Program_Language>
 		<Program_Change_Info />
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
@@ -55,13 +55,13 @@
 		<Includes_VB_Runtime>N</Includes_VB_Runtime>
 		<Includes_DirectX>N</Includes_DirectX>
 		<File_Info>
-			<Filename_Versioned>DOSprn200.exe</Filename_Versioned>
-			<Filename_Previous>DOSprn191.exe</Filename_Previous>
+			<Filename_Versioned>DOSprn210.exe</Filename_Versioned>
+			<Filename_Previous>DOSprn200.exe</Filename_Previous>
 			<Filename_Generic>DOSprn.exe</Filename_Generic>
 			<Filename_Long />
-			<File_Size_Bytes>2086784</File_Size_Bytes>
-			<File_Size_K>2038</File_Size_K>
-			<File_Size_MB>1.99</File_Size_MB>
+			<File_Size_Bytes>2350120</File_Size_Bytes>
+			<File_Size_K>2295</File_Size_K>
+			<File_Size_MB>2.24</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>Y</Has_Expire_Info>
@@ -96,8 +96,8 @@ Also DOSPRN supports Epson and HP PCL Esc-sequences emulation, multiple internat
 			<Application_XML_File_URL>https://www.dosprn.com/dosprn.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://www.dosprn.com/DOSprn200.exe</Primary_Download_URL>
-			<Secondary_Download_URL>http://update.dosprn.com/DOSprn200.exe</Secondary_Download_URL>
+			<Primary_Download_URL>https://www.dosprn.com/DOSprn210.exe</Primary_Download_URL>
+			<Secondary_Download_URL>http://update.dosprn.com/DOSprn210.exe</Secondary_Download_URL>
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />
 		</Download_URLs>
