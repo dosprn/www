@@ -1,0 +1,34 @@
+# DOSPRN Website Index for LLMs
+
+## Overview
+DOSPRN is a Windows-based utility that enables printing from legacy DOS applications to modern printers.
+
+## Key Pages
+- Homepage: https://www.dosprn.com/index.htm
+  Description: Introduction to DOSPRN, its features, and use cases.
+
+- Download: https://www.dosprn.com/download.htm  
+  Description: Access to the latest version of DOSPRN and installation instructions.
+
+- Registration: https://www.dosprn.com/login.htm
+  Description: Licensing information, pricing, and activation details.
+
+## Documentation
+- FAQ: https://www.dosprn.com/faq.htm
+  Description: Frequently asked questions about setup, compatibility, and printing.
+
+- Settings: https://www.dosprn.com/readme.htm
+  Description: Guidance on font configuration for DOS printing.
+
+## Latest News
+- News: https://www.dosprn.com/news.htm
+  Description: Changes in versions.
+
+## Localization
+- Spanish Version: https://spanish.dosprn.com
+- Portuguese Version: https://portuguese.dosprn.com
+- Ukrainian Version: https://ukrainian.dosprn.com
+- Polish Version: https://polska.dosprn.com
+- Hebrew Version: https://dosprn.co.il
+- Indeonesian Version: https://indonesian.dosprn.com
+- Indian Version: https://indian.dosprn.com

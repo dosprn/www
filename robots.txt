@@ -1,6 +1,5 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.dosprn.com/sitemap.xml.gz
-
-Sitemap: https://online.webceo.com/submission/smaps/c46a8b1d.xml.gz
+Sitemap: https://dosprn.com/sitemap.xml
+Sitemap: https://online.webceo.com/sitemap/c46a8b1d/sitemap.xml.gz
